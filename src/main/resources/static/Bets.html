@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/money-bag-euro.png">
+    <title>Sportbets</title>
+    <link href="static/CSS/Bets.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="obtener_partidos()">
+    <div id="barra-navegacion">
+    </div>
+
+    <div class="matches-content">
+        <aside class="match-child left container">
+            <h1>Deportes</h1>
+            <div>
+                <img src="static/images/futbol-logo.png" class="rounded-circle icon-sport">
+                <h2 class="sport-title">Futbol</h2>
+            </div>
+            <div class="liga">
+                <img src="static/images/Spain.png" class="icon-sport">
+                <a style="cursor: pointer" onclick="obtener_partidosLigas('Es')"><h5 class="sport-title">La Liga</h5></a>
+            </div>
+            <div class="liga">
+                <img src="static/images/England.png" class="icon-sport">
+                <a style="cursor: pointer" onclick="obtener_partidosLigas('In')"><h5 class="sport-title">Premier</h5></a>
+            </div>
+            <div class="liga">
+                <img src="static/images/Italia.png" class="icon-sport">
+                <a style="cursor: pointer" onclick="obtener_partidosLigas('It')"><h5 class="sport-title">Serie A</h5></a>
+            </div>
+            <div class="liga">
+                <img src="static/images/Francia.png" class="icon-sport">
+                <a style="cursor: pointer" onclick="obtener_partidosLigas('Fr')"><h5 class="sport-title">Ligue 1</h5></a>
+            </div>
+            <div class="liga">
+                <img src="static/images/LogoChampions.png" class="icon-sport">
+                <a style="cursor: pointer" onclick="obtener_partidosLigas('Cl')"><h5 class="sport-title">Champions</h5></a>
+            </div>
+
+        </aside>
+        <section id="matches-info" class="match-child">
+        </section>
+        <aside class="match-child right">
+            <h2>TICKET DE APUESTAS</h2>
+            <hr class="linea-ticket">
+            <div id = "apuestas">
+            </div>
+
+            <div class="label-apuesta">
+                <h4 class="ubicacion-bet child">Apuesta</h4>
+                <input id="cantidad-apostada" class="child" type="number" min="1" pattern="^[0-9]+" placeholder="1">
+                <h4 class="m-symbol">€</h4>
+            </div>
+
+            <div class="label-apostar" onclick="generarApuesta()">
+                <h3 class="ubi-realizar">REALIZAR APUESTA</h3>
+                <h5 id="ganancias">Ganancias: 0 €</h5>
+            </div>
+
+
+        </aside>
+    </div>
+
+    <footer id="footer">
+    </footer>
+    <script src="static/javascript/cargarData.js"></script>
+    <script src="static/javascript/anadirPartidos.js"></script>
+    <script type="text/javascript" src="static/javascript/user_logeado.js"></script>
+    <script src="static/javascript/contador.js"></script>
+    <script src="static/javascript/anadirTicket.js"></script>
+    <script type="text/javascript" src="static/javascript/GenerarApuesta.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js"></script>
+</body>
+</html>

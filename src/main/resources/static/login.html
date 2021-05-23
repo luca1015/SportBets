@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/money-bag-euro.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="static/CSS/login.css" rel="stylesheet" type="text/css">
+    <title>Log in</title>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="408899646196-pq7hpltp8pfnf0tj8cttpt9s323m5h2k.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <script src="https://apis.google.com/js/api:client.js"></script>
+</head>
+<body>
+    <div id="close-button-d">
+        <button id="close-button" role="link" onclick="window.location='index.html'">
+            <img class = "close-img" src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png"/>
+        </button>
+    </div>
+    <div id="logreg-forms">
+        <div class="form-signin" id="form-principal" name="signin">
+            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+            <div id="customBtn" class="customBtn customGPlusSignIn">
+                <span class="icon"></span>
+                <span class="buttonText">Sign in with Google</span>
+            </div>
+            <p style="text-align:center"> OR  </p>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+
+            <button class="btn btn-success btn-block" onclick="validUser()" type="submit">Sign in</button>
+            <a href="#" id="forgot_pswd">Forgot password?</a>
+            <hr>
+            <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+        </div>
+
+        <div class="form-reset" name="forgetpassword">
+            <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <button class="btn btn-primary btn-block" onclick="forgetPassword()">Reset Password</button>
+            <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+        </div>
+
+        <div id="signup" action="/signup" class="form-signup" name="signup">
+            <div id="customBtn2" class="customBtn customGPlusSignIn">
+                <span class="icon"></span>
+                <span class="buttonText">Sign up with Google</span>
+            </div>
+            <p style="text-align:center">OR</p>
+
+            <input type="text" id="user-name" class="form-control" placeholder="Name" required="" autofocus="">
+            <input type="text" id="user-lastname" class="form-control" placeholder="Last name" required="" autofocus="">
+            <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
+            <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+
+            <button class="btn btn-primary btn-block" onclick="signUpUser()"><i class="fas fa-user-plus"></i> Sign Up</button>
+            <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
+        </div>
+        <br>
+
+    </div>
+
+    <script>
+        var googleUser = {};
+        var startApp = function() {
+            gapi.load('auth2', function(){
+                // Retrieve the singleton for the GoogleAuth library and set up the client.
+                auth2 = gapi.auth2.init({
+                    client_id: '408899646196-pq7hpltp8pfnf0tj8cttpt9s323m5h2k.apps.googleusercontent.com',
+                    cookiepolicy: 'single_host_origin',
+                    // Request scopes in addition to 'profile' and 'email'
+                    //scope: 'additional_scope'
+                });
+                attachSignin(document.getElementById('customBtn'));
+                attachSignin(document.getElementById('customBtn2'));
+            });
+        };
+
+        function attachSignin(element) {
+            auth2.attachClickHandler(element, {},
+                function(googleUser) {
+                    console.log(googleUser.getBasicProfile().getName());
+                    localStorage.setItem('nombre', googleUser.getBasicProfile().getGivenName());
+                    localStorage.setItem('logo', googleUser.getBasicProfile().getImageUrl());
+                    localStorage.setItem('email', googleUser.getBasicProfile().getEmail());
+                    localStorage.setItem('apellidos', googleUser.getBasicProfile().getFamilyName());
+                    var nombre = googleUser.getBasicProfile().getGivenName();
+                    var password = "googleRegister";
+                    var logo = googleUser.getBasicProfile().getImageUrl();
+                    var mail = googleUser.getBasicProfile().getEmail();
+                    var apellidos =googleUser.getBasicProfile().getFamilyName();
+                    signUpUserGoogle(mail,password,nombre,apellidos,logo);
+                    window.location='index.html';
+                }, function(error) {
+                    alert(JSON.stringify(error, undefined, 2));
+                });
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="static/javascript/userManagment.js"></script><script src="static/javascript/login.js"></script>
+    <script src="static/javascript/mail.js"></script>
+    <script>startApp();</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.margenes{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.WON{
+    color: darkgreen;
+    background: rgb(145,198,153);
+    border: solid 2px rgb(145,198,153);
+}
+.LOST{
+    color:darkred;
+    background: rgb(229,134,144);
+    border: solid 2px rgb(229,134,144);
+}
+.PENDING{
+    color: darkgoldenrod;
+    background: rgb(248,214,117);
+    border: solid 2px rgb(248,214,117);
+}
+.verApuestasUser{
+    border-radius: 18px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    text-align: center;
+    border: solid 2px black;
+    width: 40%;
+    margin-bottom: 1%;
+    float: left;
+    margin-left: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#title{
+    text-align: center;
+    margin-top: 1%;
+}
+.linea-gruesa{
+    border: solid 2px black;
+}
+.añadirBet{
+    overflow: hidden;
+}
+.scroll-matches{
+    height: 170px;
+    overflow-y: scroll;
+}

@@ -1,0 +1,86 @@
+
+#barra-navegacion{
+    background: rgb(0,0,0);
+    height: 225px;
+}
+#bar-margin{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+}
+.linea-bar{
+    border-color: white;
+}
+.nav-link{
+    color: white;
+}
+.nav{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.nav-link:hover{
+    color: white;
+}
+.navbar,.nav-link, .nav{
+    margin :0;
+    padding :0;
+}
+#img-container{
+    background: rgb(25,25,25);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contact-us-child{
+    float : left;
+    width: 50%;
+    height : 400px;
+    background: black;
+}
+.contact-us-father{
+    overflow : hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: rgb(25,25,25);
+}
+.left-child-c{
+    widht:100%;
+    background: black;
+    color: white;
+}
+.right-child-c{
+    widht:100%;
+}
+
+.title-contact-us{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    color: rgb(237,90,69);
+}
+footer{
+    background: black;
+    color: white;
+    padding-bottom: 1%;
+}
+.footer-icons{
+    overflow: hidden;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-left: 47.5%;
+}
+.img-icon{
+    width: 3%;
+    display:block;
+    float:left;
+}
+.img-l{
+    margin-left: 15px;
+}
+.div-inline{
+    display: inline;
+}
+#cart-user{
+    color: white;
+}

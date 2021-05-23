@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/money-bag-euro.png">
+    <title>Sportbets</title>
+    <link href="static/CSS/AdminMatches.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="cargarBarraNavegacion()">
+    <div id="barra-navegacion">
+    </div>
+    <div class="botones-default">
+        <button onclick="guardar_partidosLiga('SP')">Restear partidos España (default)</button>
+        <button onclick="guardar_partidosLiga('IN')">Restear partidos Inglaterra (default)</button>
+        <button onclick="guardar_partidosLiga('IT')">Restear partidos Italia (default)</button>
+        <button onclick="guardar_partidosLiga('FR')">Restear partidos Francia (default)</button>
+        <button onclick="guardar_partidosLiga('CL')">Restear partidos Champions (default)</button>
+        <script type="text/javascript" src="static/javascript/AdminMatches.js"></script>
+    </div>
+    <hr>
+    <div class="reset-partidos">
+        <div>
+            <p style ="font-family:optima,arial,helvética;color:black;text-decoration:underline">
+                <FONT SIZE=6>España</FONT>
+            </p>
+            <input id="DE-SP" placeholder="Duracion encuentros(min)">
+            <input id="FH-SP"placeholder="Hora primeros partidos">
+            <input id="MI-SP"placeholder="Minutos primeros partidos">
+            <button onclick="guardar_partidosLigaExpecial('SP')">Restear partidos</button>
+        </div>
+        <hr>
+        <div>
+            <p style ="font-family:optima,arial,helvética;color:black;text-decoration:underline">
+                <FONT SIZE=6>Inglaterra</FONT>
+            </p>
+            <input id="DE-IN" placeholder="Duracion encuentros(min)">
+            <input id="FH-IN" placeholder="Hora primeros partidos">
+            <input id="MI-IN" placeholder="Minutos primeros partidos">
+            <button onclick="guardar_partidosLigaExpecial('IN')">Restear partidos</button>
+        </div>
+        <hr>
+        <div>
+            <p style ="font-family:optima,arial,helvética;color:black;text-decoration:underline">
+                <FONT SIZE=6>Italia</FONT>
+            </p>
+            <input id="DE-IT" placeholder="Duracion encuentros(min)">
+            <input id="FH-IT" placeholder="Hora primeros partidos">
+            <input id="MI-IT" placeholder="Minutos primeros partidos">
+            <button onclick="guardar_partidosLigaExpecial('IT')">Restear partidos</button>
+        </div>
+        <hr>
+        <div>
+            <p style ="font-family:optima,arial,helvética;color:black;text-decoration:underline">
+                <FONT SIZE=6>Francia</FONT>
+            </p>
+            <input id="DE-FR" placeholder="Duracion encuentros(min)">
+            <input id="FH-FR" placeholder="Hora primeros partidos">
+            <input id="MI-FR" placeholder="Minutos primeros partidos">
+            <button onclick="guardar_partidosLigaExpecial('FR')">Restear partidos</button>
+        </div>
+        <hr>
+        <div>
+            <p style ="font-family:optima,arial,helvética;color:black;text-decoration:underline">
+                <FONT SIZE=6>Champions</FONT>
+            </p>
+            <input id="DE-CL" placeholder="Duracion encuentros(min)">
+            <input id="FH-CL" placeholder="Hora primeros partidos">
+            <input id="MI-CL" placeholder="Minutos primeros partidos">
+            <button onclick="guardar_partidosLigaExpecial('CL')">Restear partidos</button>
+        </div>
+    </div>
+    <footer id="footer">
+    </footer>
+    <script src="static/javascript/cargarData.js"></script>
+    <script type="text/javascript" src="static/javascript/user_logeado.js"></script>
+</body>
+</html>

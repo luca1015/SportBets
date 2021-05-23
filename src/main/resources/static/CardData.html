@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="static/javascript/CardData.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/money-bag-euro.png">
+    <title>Sportbets</title>
+    <link href="static/CSS/CardData.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/javascript/CardData.js"></script>
+</head>
+<body onload="cargarNombre()">
+<div id="barra-navegacion">
+</div>
+<div id="area">
+    <div class="title-payment-method">
+        <h1 class="payment-method" style="text-align:center;line-height:1.35em;font-size:40px">
+            <span style="font-weight: bold;">Payment method:</span>
+            <hr style="color: black; background-color: black; height:2px;">
+        </h1>
+    </div>
+    <div class="master-card" id="master-card">
+        <div class="card">
+            <div class="title">CREDIT CARD</div>
+            <div class="input-number"><span class="title-number">CARD NUMBER</span>
+                <div class="inputs-number">
+                    <input type="text" maxlength="4" name="number-card" placeholder="0000" required="required"/>
+                    <input type="text" maxlength="4" name="number-card" placeholder="0000" required="required"/>
+                    <input type="text" maxlength="4" name="number-card" placeholder="0000" required="required"/>
+                    <input type="text" maxlength="4" name="number-card" placeholder="0000" required="required"/>
+                </div>
+                <div class="selects-date selecters">
+                    <div class="day-select"><span>DAY</span>
+                        <select id="day">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                        </select>
+                    </div>
+                    <div class="year-select"><span>YEAR</span>
+                        <select id="year">
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mark-gold">
+                <div class="round">
+                    <div class="circles">
+                        <div class="circle-1"></div>
+                        <div class="circle-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="name"><span id="nombre-user"></span></div>
+        </div>
+        <div class="card-back">
+            <div class="tire"></div>
+            <div class="secret-area">
+                <input type="text" maxlength="3" name="number-card" placeholder="000" required="required"/>
+            </div>
+            <div class="chip-card"></div>
+        </div>
+    </div>
+    <div class="button-sent">
+        <button id="back">ATRÁS</button>
+        <button id="continue">CONTINUAR</button>
+        <button id="saldo" onclick="cargarSaldo()">RECARGAR SALDO</button>
+    </div>
+</div>
+
+<footer id="footer">
+</footer>
+<script type="text/javascript" src="static/javascript/CardData.js"></script>
+<script src="static/javascript/cargarData.js"></script>
+<script type="text/javascript" src="static/javascript/user_logeado.js"></script>
+</body>
+</html>

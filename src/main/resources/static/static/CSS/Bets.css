@@ -1,0 +1,247 @@
+
+#barra-navegacion{
+    background: rgb(0,0,0);
+    height: 225px;
+}
+#bar-margin{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+}
+.linea-bar{
+    border-color: white;
+}
+.nav-link{
+    color: white;
+}
+.nav{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.nav-link:hover{
+    color: white;
+}
+.navbar,.nav-link, .nav{
+    margin :0;
+    padding :0;
+}
+footer{
+    background: black;
+    color: white;
+    padding-bottom: 1%;
+}
+.footer-icons{
+    overflow: hidden;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-left: 47.5%;
+}
+.img-icon{
+    width: 3%;
+    display:block;
+    float:left;
+}
+#img-user{
+    margin-left: 15px;
+}
+.log-user{
+    float: left;
+}
+#cart-user{
+    color: white;
+}
+.matches-content{
+    overflow: hidden;
+}
+.match-child{
+    float: left;
+}
+aside.left{
+    width: 20%;
+    padding-left: 2%;
+    padding-top: 1%;
+    background: rgb(25,25,25);
+    color: white;
+    height: 750px;
+}
+aside.right{
+    width: 30%;
+    background: rgb(25,25,25);
+    color: white;
+    padding-top: 1%;
+    height: 750px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#matches-info{
+    width: 50%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 750px;
+    overflow: scroll;
+}
+.icon-sport{
+    width: 10%;
+    display:block;
+    float:left;
+    padding-top: 3%;
+}
+.icon-sport2{
+    width: 20%;
+    display:block;
+    float:left;
+    padding-top: 3%;
+}
+.sport-title{
+    padding-left: 20%;
+}
+.liga{
+    padding-left: 20%;
+}
+.linea-ticket{
+    border: white 5px solid;
+}
+.label-apuesta{
+    border-radius: 50px;
+    height: 60px;
+    background: rgb(232,232,232);
+    color:black;
+    overflow: hidden;
+    margin-top: 2%;
+}
+.ubicacion-bet{
+    padding-top: 15px;
+    padding-left: 6%;
+}
+#cantidad-apostada{
+    border: 0px;
+    margin-top: 14px;
+    margin-left: 52.5%;
+    width: 9%;
+    text-align: center;
+    font-size: 20px;
+    background: rgb(232,232,232);
+}
+.child{
+    float:left;
+}
+.m-symbol{
+    margin-top: 15px;
+}
+
+.label-apostar{
+    border-radius: 50px;
+    height: 80px;
+    background: rgb(237,90,69);
+    color:white;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4%;
+}
+.ubi-realizar{
+    margin-top: 10px;
+}
+#apuestas{
+    height: 450px;
+    overflow: scroll;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.bet-match-line{
+    background: white;
+}
+.close-button{
+    background: rgb(25,25,25);
+    border: rgb(25,25,25);
+    outline:none;
+    cursor:pointer;
+}
+.close-img{
+    width : 55%;
+}
+.apuesta-individual{
+    overflow: hidden;
+}
+.bet-winner{
+    padding-left: 3%;
+}
+.color-bet{
+    color: rgb(232,232,232);
+}
+.icon-league{
+    width: 20%;
+}
+.match-box{
+    width: 100%;
+    overflow: hidden;
+    height: 145px;
+}
+.time-left{
+    color:red;
+}
+.individual-match{
+    width: 25%;
+    height: 100px;
+    background: rgb(237,90,69);
+    color: white;
+    text-align: center;
+    margin-right: 5%;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.father{
+    overflow: hidden;
+}
+.bet-info{
+    padding-left: 5%;
+    width:80%;
+}
+
+.timer{
+    margin-left: 0;
+}
+.title-match{
+    width:100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.c-t{
+    width: 70%;
+    scroll:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.c-fecha{
+    width: 30%;
+    scroll:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+input[type=number] { -moz-appearance:textfield; }
+.child2{
+    float: right;
+}
+.title-match::-webkit-scrollbar {
+    display: none;
+}
+.father3{
+    overflow: hidden;
+}
+.child3{
+    float: left;
+}

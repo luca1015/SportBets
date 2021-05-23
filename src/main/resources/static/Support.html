@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/money-bag-euro.png">
+    <title>Sportbets</title>
+    <link href="static/CSS/Support.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body onload="cargarBarraNavegacion()">
+    <div id="barra-navegacion">
+    </div>
+
+    <div class="support-father">
+        <div class="support-child top-child-s">
+            <img src="static/images/Support.png" width="100%" height="100%"/>
+        </div>
+        <div class="support-child bottom-child-s">
+            <div class="title-contact-support">
+                <h1 class="font_6" style="text-align:center;line-height:1.35em;font-size:40px">
+                    <span class="color_18">
+                        <span>Contact Support</span>
+                    </span>
+                </h1>
+            </div>
+            <div class="how-can-we-help">
+                <p class="font_8" style="text-align:center;line-height:1.75em;font-size:18px">
+                    <span class="color_11">How can we help?</span>
+                </p>
+            </div>
+
+            <div class="main-contact-data">
+                <div id="user-form" class="user-data">
+                    <div class="input-name container">
+                        <input id="validation" type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+                        <input id="validation2" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+                    </div>
+                    <div class="input-email-phone container">
+                        <input id="validation3" type="email" class="form-control" placeholder="Email" aria-label="Email">
+                        <input id="validation4" type="phone" class="form-control" placeholder="Phone" aria-label="Phone">
+                    </div>
+                    <div class="input-issue-option container">
+                        <select id="seleccion" class="select-issue">
+                            <option selected value disabled>Choose an Issue</option>
+                            <option value="Logging into account">Logging into account</option>
+                            <option value="Completing payment">Completing payment</option>
+                            <option value="Viewing content">Viewing content</option>
+                            <option value="Uploading files">Uploading files</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="textarea container" id="textarea">
+                        <textarea id="textarea-issue" class="textarea-control container" placeholder="Let us know what you need help with..."></textarea>
+                    </div>
+                    <div class="support-button container">
+                        <button class="get-in-touch-button" onclick="enviarCorreoSupport()">
+                            Get in touch
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+    </footer>
+    <script function fnChangeBorder(boxId){
+            document.getElementById(boxId).style.border = "solid white";}>
+    </script>
+    <script src="static/javascript/ValidacionInput.js"></script>
+    <script src="static/javascript/cargarData.js"></script>
+    <script src="static/javascript/Support.js"></script>
+    <script src="static/javascript/mail.js"></script>
+    <script type="text/javascript" src="static/javascript/user_logeado.js"></script>
+</body>
+</html>
