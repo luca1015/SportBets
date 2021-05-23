@@ -19,42 +19,42 @@ Pagina de administrador de eventos (para poder generar nuevos eventos).
 
 Se ha creado un modelo de casa de apuestas, cuyo alcance se describe a continuación:
 
-  Pagina de home, store policies, support, about, contact, faq, bets, see bets, payment method, login
+  - Pagina de home, store policies, support, about, contact, faq, bets, see bets, payment method, login
   
 	Inicio Sesión & Registro - Posibilidad de registrarse e iniciar sesión con Google.
   
-  Servicio de correos electronicos
+  - Servicio de correos electronicos
     + Correo de bienvenida
     + Correo para restablecer una nueva contraseña
     + Correo de Support (cuando selecciona que esta teniendo una incidencia)
   
-  Servicio de eventos deportivos, se pueden encontrar eventos futobolísticos de las siguientes ligas:
+  - Servicio de eventos deportivos, se pueden encontrar eventos futobolísticos de las siguientes ligas:
     + La Liga - España
     + Ligue 1 - Francia
     + Premier - Inglaterra 
     + Serie A - Italia
     + Champions
     
-  Servicio de gestión de apuestas apuestas
+  - Servicio de gestión de apuestas apuestas
     + Realizar Apuestas
         * Simples
         * Combinadas - diferentes ligas
         * Diferentes cantidades para una apuesta, por defecto será de 1E.
     + Visualización del estado apuestas: LOST, WON, SCHEDULED
    
-  Servicio de gestión de saldo de usuarios
+  - Servicio de gestión de saldo de usuarios
     + Para poder realizar apuestas se debe tener saldo, y haber añadido un método de pago.
     + Al introducir la cantidad en Payment Method, vienen por defector las siguientes cantidades 1,5,10,20 Euros.
       * Puede introducirse otra cantidad, mientras sea un número entero.
     + Al realizar una apuesta, por defecto se descontará 1E, a no ser que se introduzca otra cantidad, en cuyo caso se decontará dicha cantidad.
     + Al finalizar una apuesta, en caso de haber sido ganada, se añadirá al saldo del usuario los beneficios correspondientes.
    
-   Consideraciones: 
+   - Consideraciones: 
    
-   Los eventos tiene unos timers, al finalizar dichos timers: 
+   - Los eventos tiene unos timers, al finalizar dichos timers: 
     + Se cargan los proximos eventos disponibles al cabo de unos segundos
     + Las apuestas que se estuvieran realizando serán eliminadas, puesto que han caduco eventos.
     
-   En caso de cualquier fallo con la aplicación, se agradecería que se notificara.
+   - En caso de cualquier fallo con la aplicación, se agradecería que se notificara.
    
    
