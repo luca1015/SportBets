@@ -1,13 +1,13 @@
 # SportBets
 En este repositorio se puede encontrar el código y ademas un .jar de la aplicación creada. 
 
-Consideraciones relevantes
-Navegador recomendado -> Chrome
-Puerto utilizado -> 8080
-Url -> http://localhost:8080/
-Al encontrarse la BD en una plataforma online, ciertas operaciones pueden tardar unos pocos segundos
-Para acceder a la pantalla de login -> pulsar sobre el icono
-Pagina de administrador de eventos (para poder generar nuevos eventos).
+Consideraciones relevantes: 
+* Navegador recomendado -> Chrome
+* Puerto utilizado -> 8080
+* Url -> http://localhost:8080/
+* Al encontrarse la BD en una plataforma online, ciertas operaciones pueden tardar unos pocos segundos
+* Para acceder a la pantalla de login -> pulsar sobre el icono
+* Pagina de administrador de eventos (para poder generar nuevos eventos).
   + URL: http://localhost:8080/AdminMatches.html
   + Modalidad por defecto
     * Duración de los eventos 0s. Cuando empieza el evento, finaliza. (Para que esté disponible el resultado del evento para las apuestas más rapido).
@@ -50,11 +50,9 @@ Se ha creado un modelo de casa de apuestas, cuyo alcance se describe a continuac
     + Al finalizar una apuesta, en caso de haber sido ganada, se añadirá al saldo del usuario los beneficios correspondientes.
    
    - Consideraciones: 
-   
-   - Los eventos tiene unos timers, al finalizar dichos timers: 
-    + Se cargan los proximos eventos disponibles al cabo de unos segundos
-    + Las apuestas que se estuvieran realizando serán eliminadas, puesto que han caduco eventos.
-    
-   - En caso de cualquier fallo con la aplicación, se agradecería que se notificara.
+  	* Los eventos tiene unos timers, al finalizar dichos timers: 
+	    + Se cargan los proximos eventos disponibles al cabo de unos segundos
+	    + Las apuestas que se estuvieran realizando serán eliminadas, puesto que han caduco eventos.
+    	* En caso de cualquier fallo con la aplicación, se agradecería que se notificara.
    
    
