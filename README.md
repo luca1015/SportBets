@@ -44,7 +44,7 @@ Se ha creado un modelo de casa de apuestas, cuyo alcance se describe a continuac
    
   - Servicio de gestión de saldo de usuarios
     + Para poder realizar apuestas se debe tener saldo, y haber añadido un método de pago.
-    + Al introducir la cantidad en Payment Method, viene por defecto las siguientes cantidades 1,5,10,20 Euros.
+    + Al introducir la cantidad en Payment Method, viene por defecto las siguientes cantidades 1, 5, 10 y 20 Euros.
       * Puede introducirse otra cantidad, mientras sea un número entero.
     + Al realizar una apuesta, por defecto se descontará 1E, a no ser que se introduzca otra cantidad, en cuyo caso se decontará dicha cantidad.
     + Al finalizar una apuesta, en caso de haber sido ganada, se añadirá al saldo del usuario, los beneficios correspondientes.
