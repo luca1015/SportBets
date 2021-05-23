@@ -10,7 +10,7 @@ Consideraciones relevantes:
 * Pagina de administrador de eventos (para poder generar nuevos eventos).
   + URL: http://localhost:8080/AdminMatches.html
   + Modalidad por defecto
-    * Duración de los eventos 0s. Cuando empieza el evento, finaliza. (Para que esté disponible el resultado del evento para las apuestas más rapido).
+    * Duración de los eventos 0s. Cuando empieza el evento, finaliza. (Para que esté disponible el resultado del evento, y las apuestas sean más rápidas).
     * Se generan 380 partidos, 10 partidos por día, por tanto eventos para 38 días.
     * Esperar unos 3 segundos antes de restear los partidos de diferentes ligas. 
   + Modalidad personalizado
@@ -21,7 +21,7 @@ Se ha creado un modelo de casa de apuestas, cuyo alcance se describe a continuac
 
   - Pagina de home, store policies, support, about, contact, faq, bets, see bets, payment method, login
   
-	Inicio Sesión & Registro - Posibilidad de registrarse e iniciar sesión con Google.
+  - Inicio Sesión & Registro - Posibilidad de registrarse e iniciar sesión con Google.
   
   - Servicio de correos electronicos
     + Correo de bienvenida
@@ -44,15 +44,16 @@ Se ha creado un modelo de casa de apuestas, cuyo alcance se describe a continuac
    
   - Servicio de gestión de saldo de usuarios
     + Para poder realizar apuestas se debe tener saldo, y haber añadido un método de pago.
-    + Al introducir la cantidad en Payment Method, vienen por defector las siguientes cantidades 1,5,10,20 Euros.
+    + Al introducir la cantidad en Payment Method, viene por defecto las siguientes cantidades 1,5,10,20 Euros.
       * Puede introducirse otra cantidad, mientras sea un número entero.
     + Al realizar una apuesta, por defecto se descontará 1E, a no ser que se introduzca otra cantidad, en cuyo caso se decontará dicha cantidad.
-    + Al finalizar una apuesta, en caso de haber sido ganada, se añadirá al saldo del usuario los beneficios correspondientes.
+    + Al finalizar una apuesta, en caso de haber sido ganada, se añadirá al saldo del usuario, los beneficios correspondientes.
    
    - Consideraciones: 
-  	* Los eventos tiene unos timers, al finalizar dichos timers: 
-	    + Se cargan los proximos eventos disponibles al cabo de unos segundos
-	    + Las apuestas que se estuvieran realizando serán eliminadas, puesto que han caduco eventos.
-    	* En caso de cualquier fallo con la aplicación, se agradecería que se notificara.
+  	* Los eventos tienen unos timers, al finalizar dichos timers: 
+	    + Se cargan los proximos eventos disponibles al cabo de unos segundos.
+	    + Las apuestas que se estuvieran realizando serán eliminadas, puesto que han caducado eventos.
+
+   - En caso de cualquier fallo con la aplicación, se agradecería que se notificara.
    
    
