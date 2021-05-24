@@ -9,6 +9,7 @@ Consideraciones relevantes:
 * Para acceder a la pantalla de login -> pulsar sobre el icono
 * Pagina de administrador de eventos (para poder generar nuevos eventos).
   + URL: http://localhost:8080/AdminMatches.html
+  + Al resetear los partidos de una liga, se borran todas las apuestas de todos los usuarios.
   + Modalidad por defecto
     * Duración de los eventos 0s. Cuando empieza el evento, finaliza. (Para que esté disponible el resultado del evento, y las apuestas sean más rápidas).
     * Se generan 380 partidos, 10 partidos por día, por tanto eventos para 38 días.
