@@ -1,8 +1,8 @@
-var direccion_apuestaUser = 'http://localhost:8080/api/bets/';
-var direccion_actualizarSaldo = 'http://localhost:8080/api//user/bank';
-var direccion_partidoApuesta = 'http://localhost:8080/api/users/bets/match/';
-var direccion_obtenerSaldo = 'http://localhost:8080/api/user/';
-var direccion_comprobarExiste = 'http://localhost:8080/api/user/bank/login';
+var direccion_apuestaUser = '/api/bets/';
+var direccion_actualizarSaldo = '/api/user/bank';
+var direccion_partidoApuesta = '/api/users/bets/match/';
+var direccion_obtenerSaldo = '/api/user/';
+var direccion_comprobarExiste = '/api/user/bank/login';
 function generarApuesta() {
     var email = localStorage.getItem('email')
     var ids = getIds()

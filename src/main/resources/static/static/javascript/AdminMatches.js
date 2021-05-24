@@ -1,7 +1,7 @@
-    var direccion_jornadas = 'http://localhost:8080/api/partidosExterno/';
-    var direccion_partidos = 'http://localhost:8080/api/matches/';
-    var direccion_resetear = 'http://localhost:8080/api/ligues/';
-    var direccion_eliminarApuestas = 'http://localhost:8080/api/bets';
+    var direccion_jornadas = '/api/partidosExterno/';
+    var direccion_partidos = '/api/matches/';
+    var direccion_resetear = '/api/ligues/';
+    var direccion_eliminarApuestas = '/api/bets';
 
     function guardar_partidosLiga(liga){
         eliminarApuestasAnteriores()

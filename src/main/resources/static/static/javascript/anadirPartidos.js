@@ -1,4 +1,4 @@
- var direccion_partidos = 'http://localhost:8080/api/matches/';
+ var direccion_partidos = '/api/matches/';
 
     function obtener_partidos() {
         cargarBarraNavegacion()

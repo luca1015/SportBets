@@ -1,6 +1,6 @@
-var direccion = 'http://localhost:8080/api/sendWelcomeEmail';
-var direccion2 = 'http://localhost:8080/api/sendSupportEmail';
-var direccion3 = 'http://localhost:8080/api/sendForgetPasswordEmail';
+var direccion = '/api/sendWelcomeEmail';
+var direccion2 = '/api/sendSupportEmail';
+var direccion3 = '/api/sendForgetPasswordEmail';
 
 function welcomeEmail(mail) {
     console.log('Preparado para enviar correo de bienvenida');

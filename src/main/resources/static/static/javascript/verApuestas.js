@@ -1,4 +1,4 @@
-var address_bets='http://localhost:8080/api/user/';
+var address_bets='/api/user/';
 function cargarApuestas() {
     cargarBarraNavegacion()
     var email = localStorage.getItem('email');

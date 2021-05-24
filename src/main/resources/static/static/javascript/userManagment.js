@@ -1,7 +1,7 @@
-var direccion_ValidUser = 'http://localhost:8080/api/login';
-var direccion_SignUpUser = 'http://localhost:8080/api/user/';
-var direccion_SignUpUserGoogle = 'http://localhost:8080/api/userGoogle/';
-var direccion_NameUser = 'http://localhost:8080/api/user/';
+var direccion_ValidUser = '/api/login';
+var direccion_SignUpUser = '/api/user/';
+var direccion_SignUpUserGoogle = '/api/userGoogle/';
+var direccion_NameUser = '/api/user/';
 
 function validUser() {
     var mail = document.getElementById('inputEmail').value;

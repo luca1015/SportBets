@@ -1,7 +1,7 @@
-var direccion_actualizarSaldo = 'http://localhost:8080/api/user/bank';
-var direccion_comprobarExiste = 'http://localhost:8080/api//user/bank/login';
-var direccion_crearSaldo = 'http://localhost:8080/api/user/bank/';
-var direccion_obtenerSaldo = 'http://localhost:8080/api/user/';
+var direccion_actualizarSaldo = '/api/user/bank';
+var direccion_comprobarExiste = '/api//user/bank/login';
+var direccion_crearSaldo = '/api/user/bank/';
+var direccion_obtenerSaldo = '/api/user/';
 
 !(function (a) {
     a(function () {

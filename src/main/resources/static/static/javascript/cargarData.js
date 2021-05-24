@@ -1,5 +1,5 @@
-var direccion_obtenerSaldo = 'http://localhost:8080/api/user/';
-var direccion_comprobarExiste = 'http://localhost:8080/api//user/bank/login';
+var direccion_obtenerSaldo = '/api/user/';
+var direccion_comprobarExiste = '/api/user/bank/login';
 function cargarBarraNavegacion(){
     document.getElementById('barra-navegacion').innerHTML= "<div id=\"bar-margin\">\n" +
         "               <div class=\"bar-container\">\n" +
