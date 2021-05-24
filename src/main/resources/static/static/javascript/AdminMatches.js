@@ -8,8 +8,7 @@
         var direccion;
         direccion=direccion_jornadas+liga;
         resetearLiga(liga);
-        var url = new URL(direccion)
-        fetch(url,
+        fetch(direccion,
             {
                 method: 'GET',
                 headers: {
